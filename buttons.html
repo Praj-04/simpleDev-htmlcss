@@ -1,0 +1,69 @@
+<style>
+  .subscribe-button {
+    background-color: rgb(185, 21, 21);
+    color: white;
+    border: none;
+    padding: 10px 16px 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0px 8px 0px 0px;
+    transition: opacity 0.15s; /*always Put transition inside the main class not in pseudo class...it is used to do smooth transitions  */
+    vertical-align: top;
+  }
+
+  .subscribe-button:hover {
+    opacity: 0.8;
+  }
+
+  /* opacity is used to give a light gloss film effect ..value between 0 (invisible) and 1 (fully visible) */
+  .subscribe-button:active {
+    opacity: 0.5;
+  }
+
+  .join-button {
+    color: rgb(62, 62, 116);
+    background-color: white;
+    padding: 9px 16px 9px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid rgb(36, 92, 156);
+    margin: 0px 8px 0px 0px;
+    transition: background-color 0.15s, color 1s; /*what to transition and how many seconds..if more than 1 transition then seperate by comma */
+    vertical-align: top;
+  }
+
+  .join-button:hover {
+    background-color: rgb(36, 92, 156);
+    color: white;
+  }
+
+  /* active pseudo class is used when you want to have some css change while clicking  */
+  .join-button:active {
+    opacity: 0.7;
+  }
+
+  .tweet-button {
+    color: white;
+    background-color: rgba(17, 134, 230, 0.856);
+    border: none;
+    padding: 9px 16px 9px 16px;
+    border-radius: 25px;
+    vertical-align: top;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+    margin: 0px 8px 0px 0px;
+  }
+
+  .tweet-button:hover {
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15); /* 4 values are right ,bottom , blurr,color(rgba -> color with opacity..the last value 0.15) */
+  }
+</style>
+
+<button class="subscribe-button">SUBSCRIBE</button>
+<button class="join-button">JOIN</button>
+
+<button class="tweet-button">Tweet</button>
+
+<!-- done till 1:02 in youtube -->
